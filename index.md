@@ -1,5 +1,4 @@
 ---
 title: It's a website
-layout: default
+layout: home
 ---
-It's a website
