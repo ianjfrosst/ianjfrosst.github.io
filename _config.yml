@@ -33,7 +33,6 @@ kramdown:
     # syntax_highlighter_opts:
     #     css_class: 'highlight'
 
-theme: minima #jekyll-theme-minimal
 
 exclude:
     - Gemfile
