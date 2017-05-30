@@ -13,14 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-include: ["_pages"]
+include:
+    - _pages
 
-title: There's a thing here
+title: Ian Frosst
 email: ianjfrosst@gmail.com
 description: >
-    TBD
+    Mechatronics Engineering Student at the University of Waterloo
+    with a passion for unmanned vehicles.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ianjfrosst.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ianjfrosst.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ianjfrosst
 github_username: ianjfrosst
 
@@ -30,11 +32,9 @@ markdown: kramdown
 
 kramdown:
     input: GFM
-
     syntax_highlighter: rouge
-    # syntax_highlighter_opts:
-    #     css_class: 'highlight'
-
+    syntax_highlighter_opts:
+        css_class: 'highlight'
 
 exclude:
     - Gemfile

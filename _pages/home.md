@@ -1,5 +1,5 @@
 ---
 layout: home
-title: It's a website
+title: Blog
 permalink: /
 ---
