@@ -17,7 +17,7 @@ include:
     - _pages
 
 title: Ian Frosst
-email: ianjfrosst@gmail.com
+email: ijfrosst@uwaterloo.ca
 description: >
     Mechatronics Engineering Student at the University of Waterloo
     with a passion for unmanned vehicles.
@@ -27,8 +27,11 @@ twitter_username: ianjfrosst
 github_username: ianjfrosst
 
 # Build settings
-highlighter: rouge
 markdown: kramdown
+highlighter: rouge
+
+plugins:
+    - jekyll-feed
 
 kramdown:
     input: GFM
