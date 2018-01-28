@@ -16,7 +16,8 @@
 include:
     - _pages
 
-title: Ian Frosst
+title: Ian J. Frosst # TODO: more clever title
+author: Ian J. Frosst
 email: ijfrosst@uwaterloo.ca
 description: >
     Mechatronics Engineering Student at the University of Waterloo
@@ -25,19 +26,33 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ianjfrosst.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ianjfrosst
 github_username: ianjfrosst
+#linkedin_username: ianfrosst
+
+show_excerpts: true
+
+#google_analytics: UA-NNNNNNNN-N
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+    date_format: "%b %-d, %Y"
+
+header_pages:
+    - index.md
+    - about.md
+
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-
-plugins:
-    - jekyll-feed
 
 kramdown:
     input: GFM
     syntax_highlighter: rouge
     syntax_highlighter_opts:
         css_class: 'highlight'
+
+theme: minima
 
 exclude:
     - Gemfile
