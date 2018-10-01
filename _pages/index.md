@@ -1,5 +1,6 @@
 ---
 layout: home
-title: Blog
+title: ~/
 permalink: /
 ---
+Content goes here.

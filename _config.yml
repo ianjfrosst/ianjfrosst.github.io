@@ -52,6 +52,9 @@ theme: minima
 minima:
     date_format: "%b %-d, %Y"
 
+timezone: America/Toronto
+encoding: utf-8
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
