@@ -13,34 +13,44 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-include:
-    - _pages
-
-title: Ian J. Frosst # TODO: more clever title
+title: Ian J. Frosst
 author: Ian J. Frosst
 email: ijfrosst@uwaterloo.ca
 description: >
-    Mechatronics Engineering Student at the University of Waterloo
-    with a passion for unmanned vehicles.
+    Mechatronics Engineering student at the University of Waterloo.
+    Passionate about robotics, embedded systems, and music.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ianjfrosst.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ianjfrosst
 github_username: ianjfrosst
-#linkedin_username: ianfrosst
+linkedin_username: ianjfrosst
+twitter_username: ianjfrosst
+rss: subscribe
+
+include:
+    - _pages
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+
+header_pages:
+    - _pages/about.md
+    - _pages/index.md
 
 show_excerpts: true
 
 #google_analytics: UA-NNNNNNNN-N
 
+sass:
+    style: compressed
+
+theme: minima
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
     date_format: "%b %-d, %Y"
-
-header_pages:
-    - index.md
-    - about.md
-
 
 # Build settings
 markdown: kramdown
@@ -51,10 +61,3 @@ kramdown:
     syntax_highlighter: rouge
     syntax_highlighter_opts:
         css_class: 'highlight'
-
-theme: minima
-
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - README.md
